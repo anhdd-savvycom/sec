@@ -1,0 +1,26 @@
+type Query {
+  game: Game
+}
+
+type Punch {
+  color: String
+  createdAt: String
+}
+
+type Game {
+  black: Int
+  blue: Int
+  orange: Int
+  data: [Punch]
+  isFinal: Boolean
+  createdAt: String
+}
+
+type Subscription {
+  subcribe: Game
+}
+
+type Mutation {
+  newGame: Game
+  punch(type: String): Game
+}

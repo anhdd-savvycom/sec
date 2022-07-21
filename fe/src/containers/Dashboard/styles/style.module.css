@@ -1,0 +1,14 @@
+.dashboard-chart {
+  height: 385px;
+  margin-bottom: 50px;
+}
+
+.dashboard-block {
+  text-align: center;
+}
+
+.dashboard-button {
+  font-size: 50px;
+  width: 100%;
+  color: #fff;
+}

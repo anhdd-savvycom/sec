@@ -1,0 +1,24 @@
+version: "3.3"
+
+services:
+  fe:
+    build:
+      context: ${FE_CONTEXT}
+      dockerfile: Dockerfile.prod
+    container_name: ${FE_NAME}
+    restart: always
+    ports:
+      - '${FE_EXPOSE_PORT}:${FE_PORT}'
+
+  be:
+    build:
+      context: ${BE_CONTEXT}
+      dockerfile: Dockerfile.local
+    container_name: ${BE_NAME}
+    volumes:
+      - ${BE_CONTEXT}:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/dist
+    restart: always
+    ports:
+      - '${BE_EXPOSE_PORT}:${BE_PORT}'

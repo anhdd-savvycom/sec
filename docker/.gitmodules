@@ -1,0 +1,6 @@
+[submodule "FE"]
+	path = FE
+	url = https://gitlab.com/t8397/fe.git
+[submodule "BE"]
+	path = BE
+	url = https://gitlab.com/t8397/be.git
