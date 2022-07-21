@@ -1,3 +1,3 @@
 ## Deployment guide
 
-Follow guide in docker folder
+Follow guide in "docker" folder
